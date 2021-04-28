@@ -38,11 +38,27 @@ public class LineComparisonBuilder {
 	
 		Integer L1=new Integer(line1_length);
 		Integer L2=new Integer(line2_length);
+		//Using Equal Method
+		
 		if(L1.equals(L2)) {
 			System.out.println("Both lines are equal");
 		}
 		else {
 			System.out.println("Both lines are not equal");
+		}
+		
+		//Using CompareTo method
+		
+		int eq=L1.compareTo(L2);
+		System.out.println(eq);
+		if(eq==0) {
+			System.out.println("Bothe lines are Equal ");
+		}
+		else if(eq>0) {
+			System.out.println("Line1 is Greater Than Line 2");
+		}
+		else {
+			System.out.println("Line2 is Greater than Line1");
 		}
 		
 		
